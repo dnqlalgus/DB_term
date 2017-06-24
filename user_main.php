@@ -8,6 +8,8 @@
 	<title> 일반 회원 메인 </title>
 </head>
 <body>
+	<div class="container">
+    <div class="page-header">
 	<p style="text-align: center;">환영합니다. <?=$_SESSION['id']?>님</p>
 	<a href="club_view.php"><h3>동아리 목록 보기</h3></a>
 	</br>
@@ -19,4 +21,6 @@
 	</br>
 	<a href="logout.php"><h3>로그아웃</h3></a>
 	</br>
+</div>
+</div>
 </body>
