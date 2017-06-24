@@ -1,6 +1,7 @@
 <?php
    include("config.php");
    include("util.php");
+   include "header.php";
    
    $conn = dbconnect($host, $dbid, $dbpass, $dbname);
    session_start();
