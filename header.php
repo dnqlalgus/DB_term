@@ -30,7 +30,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php">고동아리</a>
+        <a class="navbar-brand" href="main.php">고동아리</a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
