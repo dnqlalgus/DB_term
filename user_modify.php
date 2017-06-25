@@ -3,7 +3,6 @@ include "config.php";    //데이터베이스 연결 설정파일
 include "util.php";      //유틸 함수
 
 $conn = dbconnect($host,$dbid,$dbpass,$dbname);
-session_start();
 
 $id=$_POST['id'];
 $username = $_POST['username'];
@@ -11,8 +10,8 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 
-$get = mysql_query("select * from members where id='$id'", $conn);
-$ret = mysql_query("update members set username = '$username', email = '$email', password = '$password' where id = '$id'", $conn);
+$get = mysql_query("SELECT * from members where id='$id'", $conn);
+$ret = mysql_query("UPDATE members set username = '$username', email = '$email', password = '$password' where id = '$id'", $conn);
 
 if(!$ret || !$get)
 {
