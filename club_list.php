@@ -60,5 +60,14 @@ $res = mysql_query($query, $conn);
   </div>
 </div>
 </div>
+<script>
+        function deleteConfirm(c_id) {
+            if (confirm("정말 삭제하시겠습니까?") == true){    //확인
+                window.location = "club_delete.php?c_id=" + c_id;
+            }else{   //취소
+                return;
+            }
+        }
+    </script>
 </body>
 </html>
