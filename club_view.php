@@ -27,10 +27,8 @@ $res = mysql_query($query, $conn);
         <tr>
             <th>No</th>
             <th>동아리명</th>
-            <th>설립년도</th>
             <th>동아리방</th>
             <th>대표 연락처</th>
-            <th>소속</th>
             <th>설명</th>
             <th>기능</th>
         </tr>
@@ -42,10 +40,8 @@ $res = mysql_query($query, $conn);
             echo "<tr>";
             echo "<td>".$row_index."</td>";
             echo "<td>".$row['c_name']."</td>";
-            echo "<td>".$row['c_year']."</td>";
             echo "<td>".$row['c_room']."</td>";
             echo "<td>".$row['c_number']."</td>";
-            echo "<td>".$row['c_field']."</td>";
             echo "<td>".$row['detail']."</td>";
             echo "<td width='17%'>
                 <a href='club_form.php?c_id={$row['c_id']}'><button class='btn btn-primary btn-sm'>가입</button></a>
