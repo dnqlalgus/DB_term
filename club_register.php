@@ -20,11 +20,6 @@ $conn = dbconnect($host, $dbid, $dbpass, $dbname);
           </fieldset>
 
           <fieldset class="form-group">
-            <label for="c_year">동아리 설립년도</label>
-            <input type="text" class="form-control" id="c_year" name="c_year" >
-          </fieldset>
-
-          <fieldset class="form-group">
             <label for="c_room">동아리방</label>
             <input type="text" class="form-control" id="c_room" name="c_room" >
           </fieldset>
@@ -34,12 +29,6 @@ $conn = dbconnect($host, $dbid, $dbpass, $dbname);
             <input type="text" class="form-control" id="c_number" name="c_number" >
           </fieldset>
 
-          <fieldset class="form-group">
-            <label for="c_field">동아리 소속</label>
-            <input type="text" class="form-control" id="c_field" name="c_field" >
-            <label>중앙동아리 : 1 / 애기능동아리 : 2</label>
-          </fieldset>
-         
           <fieldset class="form-group">
             <label for="detail">동아리 설명</label>
             <textarea class="form-control" id="detail" name="detail" rows="3"><?=$c['detail']?></textarea>
