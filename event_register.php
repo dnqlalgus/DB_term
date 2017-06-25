@@ -1,4 +1,4 @@
-<?
+<?php
 include "header.php";
 include "config.php";    //데이터베이스 연결 설정파일
 include "util.php";      //유틸 함수
@@ -7,6 +7,7 @@ $conn = dbconnect($host, $dbid, $dbpass, $dbname);
 
 ?>
 <html>
+<body>
  <div class="container">
     <div class="page-header">
       <h1>이벤트 등록</h1>
@@ -38,5 +39,5 @@ $conn = dbconnect($host, $dbid, $dbpass, $dbname);
 
          </form>
     </div>
-</div>
+</body>
 </html>
