@@ -1,6 +1,7 @@
 <?php
 include "config.php";    //데이터베이스 연결 설정파일
 include "util.php";      //유틸 함수
+include "header.php";
 
 $conn = dbconnect($host,$dbid,$dbpass,$dbname);
 session_start();
