@@ -25,7 +25,7 @@ else{
 	else
 	{
 		s_msg ('회원가입 완료! 다시 로그인해주세요!');
-	    echo "<meta http-equiv='refresh' content='0;url=login.php?id=$id'>";
+	    echo "<meta http-equiv='refresh' content='0;url=login.php'>";
 	}
 }
 ?>
