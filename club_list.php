@@ -43,7 +43,7 @@ $res = mysql_query($query, $conn);
             echo "<td>".$row['c_name']."</td>";
             echo "<td>".$row['c_room']."</td>";
             echo "<td>".$row['c_number']."</td>";
-            echo "<td>".$row['budget']."</td>";
+            echo "<td>".$row['c_budget']."</td>";
             echo "<td>".$row['detail']."</td>";
             echo "<td width='17%'>
                 <a href='club_form.php?c_id={$row['c_id']}'><button class='btn btn-primary btn-sm'>수정</button></a>

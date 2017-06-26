@@ -26,13 +26,13 @@ $conn = dbconnect($host, $dbid, $dbpass, $dbname);
           </fieldset>
 
           <fieldset class="form-group">
-            <label for="e_place">이벤트 장소</label>
+            <label for="e_place">이벤트 장소 및 날짜</label>
             <input type="text" class="form-control" id="e_place" name="e_place" >
           </fieldset>
 
           <fieldset class="form-group">
             <label for="e_detail">이벤트 설명</label>
-            <textarea class="form-control" id="e_detail" name="e_detail" rows="3"><?=$c['detail']?></textarea>
+            <textarea class="form-control" id="e_detail" name="e_detail" rows="3"></textarea>
           </fieldset>
 
             <p align="center"><button id="submit_btn" class="btn btn-primary" type="submit" value="submit">등록</button></p>

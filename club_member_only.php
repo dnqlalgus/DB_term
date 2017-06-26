@@ -61,8 +61,6 @@ if (array_key_exists("c_id", $_GET)) {
                   </tbody>
               </table>
           </fieldset>
-          <a style="float:right" href="club_view.php"><button type="button" class="btn btn-default">목록으로</button></a>
     </div>
     
 </div>
-<? include("footer.php") ?>

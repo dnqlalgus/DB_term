@@ -3,9 +3,7 @@ include "header.php";
 include "config.php";    //데이터베이스 연결 설정파일
 include "util.php";      //유틸 함수
 
-
 $conn = dbconnect($host, $dbid, $dbpass, $dbname);
-session_start();
 $query = "select * from clubs";
 
 $res = mysql_query($query, $conn);
@@ -31,6 +29,7 @@ $res = mysql_query($query, $conn);
             <th>동아리명</th>
             <th>동아리방</th>
             <th>대표 연락처</th>
+            <th>예산</th>
             <th>설명</th>
             <th>기능</th>
         </tr>
@@ -44,10 +43,10 @@ $res = mysql_query($query, $conn);
             echo "<td>".$row['c_name']."</td>";
             echo "<td>".$row['c_room']."</td>";
             echo "<td>".$row['c_number']."</td>";
+            echo "<td>".$row['c_budget']."</td>";
             echo "<td>".$row['detail']."</td>";
             echo "<td width='17%'>
-                <a href='club_join.php?c_id={$row['c_id']}'><button class='btn btn-primary btn-sm'>가입</button></a>
-                 <button onclick='javascript:deleteConfirm({$row['c_id']})' class='btn btn-danger btn-sm'>탈퇴</button>
+                <a href='club_budget_form.php?c_id={$row['c_id']}'><button class='btn btn-primary btn-sm'>예산</button></a>
                  <a href='club_member_only.php?c_id={$row['c_id']}'><button class='btn btn-primary btn-sm'>회원</button></a>
                 </td>";
             echo "</tr>";
@@ -59,14 +58,5 @@ $res = mysql_query($query, $conn);
   </div>
 </div>
 </div>
-<script>
-        function deleteConfirm(c_id) {
-            if (confirm("정말 탈퇴하시겠습니까?") == true){    //확인
-                window.location = "club_out.php?c_id=" + c_id;
-            }else{   //취소
-                return;
-            }
-        }
-    </script>
 </body>
 </html>

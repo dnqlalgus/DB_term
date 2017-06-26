@@ -6,8 +6,8 @@ include "header.php";
 $conn = dbconnect($host,$dbid,$dbpass,$dbname);
 
 $c_name = $_POST['c_name'];
-$e_name = $_POST['c_year'];
-$e_place = $_POST['c_room'];
+$e_name = $_POST['e_name'];
+$e_place = $_POST['e_place'];
 $e_detail = $_POST['e_detail'];
 
 
@@ -23,8 +23,3 @@ else
 }
 
 ?>
-
-
-
-
-

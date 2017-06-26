@@ -20,7 +20,10 @@ if(!$ret || !$get)
 }
 else
 {
-    s_msg('성공적으로 수정 되었습니다');
+	$row = mysql_fetch_assoc($get);
+
+    s_msg ('성공적으로 수정 되었습니다');
+
     echo "<meta http-equiv='refresh' content='0;url=admin_main.php'>";
 }
 

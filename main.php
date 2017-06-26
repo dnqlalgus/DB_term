@@ -1,5 +1,8 @@
 <?php 
-  include "header.php"; ?>
+  include "header.php"; 
+  session_destroy();
+  ?>
+
 <div class="container">
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
@@ -16,7 +19,7 @@
     <div class="card card-block">
       <h3 class="card-title">회원 가입</h3>
       <p class="card-text">고동아리에 가입하세요!</p>
-      <a href="join.php" class="btn btn-primary">회원가입</a>
+      <a href="register.php" class="btn btn-primary">회원가입</a>
     </div>
   </div>
   <div class="row">
@@ -33,6 +36,3 @@
 
 </div>
 </div>
-
-<?php 
-include "footer.php"; ?>

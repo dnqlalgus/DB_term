@@ -78,4 +78,3 @@ if (array_key_exists("c_id", $_GET)) {
             }
         }
     </script>
-<? include("footer.php") ?>

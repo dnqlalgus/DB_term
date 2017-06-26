@@ -44,7 +44,7 @@ $res = mysql_query($query, $conn);
             echo "<td>".$row['e_place']."</td>";
             echo "<td>".$row['e_detail']."</td>";
             echo "<td width='17%'>
-                <a href='event_register.php?e_id={$row['e_id']}'><button class='btn btn-primary btn-sm'>수정</button></a>
+                <a href='event_modify_form.php?e_id={$row['e_id']}'><button class='btn btn-primary btn-sm'>수정</button></a>
                  <button onclick='javascript:deleteConfirm({$row['e_id']})' class='btn btn-danger btn-sm'>삭제</button>
                 </td>";
             echo "</tr>";

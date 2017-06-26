@@ -34,11 +34,10 @@ else
     s_msg ($msg.'성공적으로 수정 되었습니다');
 
     if($row['belong']=='1')
-    	header("location: user_main.php");
+    	echo "<meta http-equiv='refresh' content='0; url=user_main.php'>";
     else if($row['belong']=='2')
-    	header("location: admin_main.php");
+    	echo "<meta http-equiv='refresh' content='0; url=admin_main.php'>";
     else if($row['belong']=='3')
-    	header("location: school_main.php");
+    	echo "<meta http-equiv='refresh' content='0; url=school_main.php'>";
 }
-
 ?>
