@@ -65,13 +65,4 @@ if (array_key_exists("c_id", $_GET)) {
     </div>
     
 </div>
-<script>
-        function deleteConfirm(id,c_id) {
-            if (confirm("정말 강퇴시키겠습니까?") == true){    //확인
-                window.location = "club_forced_out.php?id=" + id + "&c_id=" + c_id;
-            }else{   //취소
-                return;
-            }
-        }
-    </script>
 <? include("footer.php") ?>
