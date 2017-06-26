@@ -46,8 +46,9 @@ $res = mysql_query($query, $conn);
             echo "<td>".$row['budget']."</td>";
             echo "<td>".$row['detail']."</td>";
             echo "<td width='17%'>
-                <a href='club_register.php?c_id={$row['c_id']}'><button class='btn btn-primary btn-sm'>수정</button></a>
+                <a href='club_form.php?c_id={$row['c_id']}'><button class='btn btn-primary btn-sm'>수정</button></a>
                  <button onclick='javascript:deleteConfirm({$row['c_id']})' class='btn btn-danger btn-sm'>삭제</button>
+                 <a href='club_member.php?c_id={$row['c_id']}'><button class='btn btn-primary btn-sm'>회원</button></a>
                 </td>";
             echo "</tr>";
             $row_index++;
