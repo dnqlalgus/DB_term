@@ -15,7 +15,7 @@ session_start();
 <body>
 	<div class="container">
     <div class="page-header">
-	<p style="text-align: center;">환영합니다. <?=$_SESSION['id']?>님</p>
+	<p style="text-align: center;">환영합니다. <?=$_SESSION['username']?>님</p>
 	<form class="form-modify" method="POST" action="user_modify.php">
 
         <fieldset class="form-group">

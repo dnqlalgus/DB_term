@@ -26,7 +26,7 @@ else{
 			else
 			{
 			    s_msg ('성공적으로 가입되었습니다.');
-	        	echo "<meta http-equiv='refresh' content='0;url=main.php'>";
+	        	echo "<meta http-equiv='refresh' content='0;url=user_main.php'>";
 			}
 			
 	}

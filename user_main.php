@@ -15,7 +15,7 @@
 	</br>
 	<a href="event_view.php"><h3>이벤트 목록 보기</h3></a>
 	</br>
-	<a href="user_modify.php"><h3>정보 수정</h3></a>
+	<a href="user_modify_form.php"><h3>정보 수정</h3></a>
 	</br>
 	<a href="user_delete_form.php"><h3>회원 탈퇴</h3></a>
 	</br>
