@@ -44,7 +44,8 @@ $conn = dbconnect($host, $dbid, $dbpass, $dbname);
           </fieldset>
 
          
-        <input type="submit" value="submit"><input type=reset value="rewrite">
+        <p align="center"><button id="submit_btn" class="btn btn-primary" type="submit" value="submit">회원 가입</button>
+       <button id="submit_btn" class="btn btn-primary" type=reset value="rewrite">초기화</button></p>
        </form>
   </div>
 </body>
