@@ -17,7 +17,8 @@
       $count=mysql_num_rows($result);
 
       if($count==1) {
-         $_SESSION['id']=$row['username'];
+         $_SESSION['username']=$row['username'];
+         $_SESSION['id']=$row['id'];
          if($row['belong']=='1')
             header("location: user_main.php");
          else if($row['belong']=='2')
