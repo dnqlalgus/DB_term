@@ -6,10 +6,6 @@ include "util.php";      //유틸 함수
 $conn = dbconnect($host, $dbid, $dbpass, $dbname);
 $c_id=$_GET['c_id'];
 
-#$query="SELECT * from clubs where c_id='$c_id'"
-#$res=mysql_query($query,$conn) or die(mysql_error($conn));
-#$row=mysql_fetch_assoc($res);
-
 ?>
 
 <html>

@@ -10,11 +10,10 @@ $e_name = $_POST['e_name'];
 $e_place = $_POST['e_place'];
 $e_detail = $_POST['e_detail'];
 
-
 $ret = mysql_query("INSERT into events (c_name, e_name, e_place ,e_detail) values ('$c_name', '$e_name', '$e_place', '$e_detail')",$conn);
 if(!$ret)
 {
-    msg('Query Error : '.mysql_error($conn));
+    msg('모든 정보를 정확히 입력해주세요!');
 }
 else
 {

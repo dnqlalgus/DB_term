@@ -31,7 +31,7 @@ $conn = dbconnect($host, $dbid, $dbpass, $dbname);
 
           <fieldset class="form-group">
             <label for="detail">동아리 설명</label>
-            <textarea class="form-control" id="detail" name="detail" rows="3"><?=$c['detail']?></textarea>
+            <textarea class="form-control" id="detail" name="detail" rows="3"></textarea>
           </fieldset>
 
             <p align="center"><button id="submit_btn" class="btn btn-primary" type="submit" value="submit">등록</button></p>

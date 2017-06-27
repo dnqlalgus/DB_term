@@ -39,7 +39,8 @@ session_start();
             <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
           </fieldset>
          
-        <input type="submit" value="submit"><input type=reset value="rewrite">
+        <p align="center"><button id="submit_btn" class="btn btn-primary" type="submit" value="submit">정보 수정</button>
+       <button id="submit_btn" class="btn btn-primary" type=reset value="rewrite">초기화</button></p>
        </form>
    </div>
 </div>
