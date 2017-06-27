@@ -21,7 +21,7 @@ session_start();
 	</br>
 	<a href="user_modify_form.php"><h3>정보 수정</h3></a>
 	</br>
-	<a href="user_delete.php"><h3>회원 탈퇴</h3></a>
+	<a href="user_delete_form.php"><h3>회원 탈퇴</h3></a>
 	</br>
 	<a href="logout.php"><h3>로그아웃</h3></a>
 	</br>
