@@ -11,7 +11,7 @@ include "header.php";
 	<div class="container">
     <div class="page-header">
 	<p style="text-align: center;">환영합니다. <?=$_SESSION['username']?>님</p>
-	<a href="club_budget.php"><h3>동아리 목록 보기</h3></a>
+	<a href="club_budget.php"><h3>동아리 예산 배정</h3></a>
 	</br>
 	<a href="event_view.php"><h3>이벤트 목록 보기</h3></a>
 	</br>

@@ -6,12 +6,13 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
 
 $c_id=$_POST['c_id'];
 $c_name=$_POST['c_name'];
-$budget=$_POST['c_budget'];
+$c_budget=$_POST['c_budget'];
 
-$query=mysql_query("SELECT * from clubs where c_id='$c_id'",$conn);
+$query=mysql_query("SELECT * from clubs where c_name='$c_name'",$conn);
+$res=mysql_num_rows($query);
 $budget_query=mysql_query("UPDATE clubs set c_budget='$c_budget' where c_id='$c_id' and c_name='$c_name'",$conn);
 
-if(!$query || !$budget_query)
+if( !$res )
 {
     msg('Query Error : '.mysql_error($conn));
 }
