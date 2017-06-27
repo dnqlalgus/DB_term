@@ -1,31 +1,34 @@
 <?php
-include 'config.php';    //데이터베이스 연결 설정파일
-include 'util.php';      //유틸 함수
+include "config.php";    //데이터베이스 연결 설정파일
+include "util.php";      //유틸 함수
 
 $conn = dbconnect($host,$dbid,$dbpass,$dbname);
+session_start();
 
-$id= $_POST['id'];
+$id=$_POST['id'];
 $username = $_POST['username'];
 $email = $_POST['email'];
 $password = $_POST['password'];
-$belong=$_POST['belong'];
 
-$check = mysql_query("select * from members where id='$id'",$conn);
-if(mysql_num_rows($check)>0){
-	s_msg ('이미 가입되어있습니다. 로그인해주세요!');
-    echo "<meta http-equiv='refresh' content='0;url=login.php'>";
+
+$get = mysql_query("SELECT * from members where id='$id'", $conn);
+$ret = mysql_query("UPDATE members set email = '$email', password = '$password' where id = '$id'", $conn);
+
+if(!$ret || !$get)
+{
+    msg('Query Error : '.mysql_error($conn));
 }
-else{
+else
+{
+	$row = mysql_fetch_assoc($get);
 
-	$ret = mysql_query("insert into members (id, username, email, password,belong) values ('$id', '$username', '$email', '$password','$belong')",$conn);
-	if(!$ret)
-	{
-	    msg('Query Error : '.mysql_error($conn));
-	}
-	else
-	{
-		s_msg ('회원가입 완료! 다시 로그인해주세요!');
-	    echo "<meta http-equiv='refresh' content='0;url=login.php'>";
-	}
+    s_msg ('성공적으로 수정 되었습니다');
+
+    if($row['belong']=='1')
+    	echo "<meta http-equiv='refresh' content='0; url=user_main.php'>";
+    else if($row['belong']=='2')
+    	echo "<meta http-equiv='refresh' content='0; url=admin_main.php'>";
+    else if($row['belong']=='3')
+    	echo "<meta http-equiv='refresh' content='0; url=school_main.php'>";
 }
 ?>

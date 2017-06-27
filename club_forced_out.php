@@ -16,7 +16,7 @@ if(!$ret)
 else
 {
     s_msg ('성공적으로 강퇴시켰습니다');
-    echo "<meta http-equiv='refresh' content='0;url=main.php'>";
+    echo "<meta http-equiv='refresh' content='0;url=admin_main.php'>";
 }
 
 ?>

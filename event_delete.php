@@ -4,9 +4,9 @@ include "util.php";      //유틸 함수
 
 $conn = dbconnect($host,$dbid,$dbpass,$dbname);
 
-$c_id = $_GET['c_id'];
+$e_id = $_GET['e_id'];
 
-$ret = mysql_query("delete from clubs where c_id = $c_id", $conn);
+$ret = mysql_query("DELETE from events where e_id = '$e_id'", $conn);
 
 
 if(!$ret)

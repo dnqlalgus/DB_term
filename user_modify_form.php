@@ -21,12 +21,12 @@ session_start();
 
         <fieldset class="form-group">
             <label for="id">학번</label>
-           <input type="text" id="id" name="id" class="form-control" placeholder="id" required autofocus>
+           <input type="text" id="id" name="id" class="form-control" placeholder="변경금지" required autofocus>
           </fieldset>
 
           <fieldset class="form-group">
             <label for="username">이름</label>
-            <input type="text" id="username" name="username" class="form-control" placeholder="Username" required>
+            <input type="text" id="username" name="username" class="form-control" placeholder="변경금지" required>
           </fieldset>
 
            <fieldset class="form-group">

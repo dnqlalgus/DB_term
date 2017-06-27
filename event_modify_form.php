@@ -17,11 +17,6 @@ $e_id=$_GET['e_id'];
         <form name="e_form" action="event_modify.php" method="post" class="fullwidth">
             <input type="hidden" name="e_id" value="<?=$e_id?>" >
 
-            <fieldset class="form-group">
-            <label for="c_name">동아리 이름</label>
-            <input type="text" class="form-control" id="c_name" name="c_name" >
-          </fieldset>
-
           <fieldset class="form-group">
             <label for="e_name">이벤트 이름</label>
             <input type="text" class="form-control" id="e_name" name="e_name" >

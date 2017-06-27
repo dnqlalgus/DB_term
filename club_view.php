@@ -46,7 +46,7 @@ $res = mysql_query($query, $conn);
             echo "<td>".$row['c_number']."</td>";
             echo "<td>".$row['detail']."</td>";
             echo "<td width='17%'>
-                <a href='club_join.php?c_id={$row['c_id']}'><button class='btn btn-primary btn-sm'>가입</button></a>
+                <button onclick='javascript:joinConfirm({$row['c_id']})' class='btn btn-primary btn-sm'>가입</button></a>
                  <button onclick='javascript:deleteConfirm({$row['c_id']})' class='btn btn-danger btn-sm'>탈퇴</button>
                  <a href='club_member_only.php?c_id={$row['c_id']}'><button class='btn btn-primary btn-sm'>회원</button></a>
                 </td>";
@@ -63,6 +63,13 @@ $res = mysql_query($query, $conn);
         function deleteConfirm(c_id) {
             if (confirm("정말 탈퇴하시겠습니까?") == true){    //확인
                 window.location = "club_out.php?c_id=" + c_id;
+            }else{   //취소
+                return;
+            }
+        }
+        function joinConfirm(c_id) {
+            if (confirm("이 동아리에 가입하시겠습니까?") == true){    //확인
+                window.location = "club_join.php?c_id=" + c_id;
             }else{   //취소
                 return;
             }
